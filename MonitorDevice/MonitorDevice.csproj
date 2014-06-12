@@ -90,13 +90,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Green.png" />
+    <None Include="Resources\Red.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Red.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\" />
+    <None Include="Resources\Green.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
