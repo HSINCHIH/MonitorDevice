@@ -9,50 +9,6 @@ using System.Data.SQLite;
 
 namespace MonitorDevice
 {
-    //class MkDbHandler
-    //{
-    //    private SQLiteConnection m_Connection;
-    //    private SQLiteCommand m__Command;  
-    //    public void OpenDB()
-    //    {
-    //        if (!Directory.Exists("database"))
-    //        {
-    //            Directory.CreateDirectory("database");
-    //        }
-    //        m_Connection = new SQLiteConnection(string.Format("Data source = {0}", @"database\database.db"));
-    //        m_Connection.Open();
-    //        m__Command = new SQLiteCommand(m_Connection);
-    //        CreateTable();
-    //    }
-
-    //    public void CreateTable()
-    //    {
-    //        if (!IsTableExist("USER"))
-    //        {
-    //            m__Command.CommandText = "CREATE TABLE USER(U_ID , NAME_CHT, NAME_ENG, ENABLE)";
-    //            m__Command.ExecuteNonQuery();
-    //        }
-
-    //        if (!IsTableExist("LOCATION"))
-    //        {
-    //            m__Command.CommandText = "CREATE TABLE LOCATION(ST_NO, TRI_NO, TM_X, TM_Y, OBS_SRC)";
-    //            m__Command.ExecuteNonQuery();
-    //        }
-
-    //        if (!IsTableExist("RECORD"))
-    //        {
-    //            m__Command.CommandText = "CREATE TABLE RECORD(REC_ID, USER_ID, TRIGGER_TIME,VALID, REC_TIME, UPDATE_TIME)";
-    //            m__Command.ExecuteNonQuery();
-    //        }
-    //    }
-
-    //    private bool IsTableExist(string tableName)
-    //    {
-    //        DataTable dt = m_Connection.GetSchema("Tables");
-    //        return dt.Select("Table_Name = '" + tableName + "'").Length > 0;
-    //    }
-    //}
-
     class MkDBHandler
     {
         SQLiteConnection m_Connection = null;

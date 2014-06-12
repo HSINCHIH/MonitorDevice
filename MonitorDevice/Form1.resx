@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>7, 9</value>
-  </metadata>
   <data name="RTB_LOCATIONDATALIST.Text" xml:space="preserve">
     <value>1540H009,雲林縣北港鎮南安里(北港大橋),1540,177833.799,2606983,0
 1540H008,雲林縣北港鎮南安里(北港大橋),1541,177833.799,2606983,0
@@ -127,6 +124,9 @@
 1540H006,雲林縣北港鎮南安里(北港大橋),1543,177833.799,2606983,0
 </value>
   </data>
+  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>7, 9</value>
+  </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>40</value>
   </metadata>

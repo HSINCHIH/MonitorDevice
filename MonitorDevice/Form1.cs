@@ -36,6 +36,10 @@ namespace MonitorDevice
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
             Initial();
         }
 
@@ -45,14 +49,22 @@ namespace MonitorDevice
             m_DrawWavGraphic = PN_DRAW_WAV.CreateGraphics();
             ShowThreadshold();
             m_HalfHeight = PN_DRAW_WAV.Height / 2;
-
-            m_Audio.DataAvailable = DataAvailable;
-            m_Audio.StartAudioIn();
+            try
+            {
+                m_Audio.DataAvailable = DataAvailable;
+                m_Audio.StartAudioIn();
+            }
+            catch (NAudio.MmException ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Close();
+            }
 
             m_DBHandler = new MkDBHandler();
             if (!m_DBHandler.Open(@"database\database.db"))
             {
-                return;
+                MessageBox.Show("Create DB Fail.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Close();
             }
             CreateTable();
 
@@ -171,7 +183,10 @@ namespace MonitorDevice
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            m_SaveDataThread.Abort();
+            if (m_SaveDataThread != null)
+            {
+                m_SaveDataThread.Abort();
+            }
             m_Audio.StopAudioIn();
             m_DrawWavGraphic.Dispose();
         }
@@ -205,6 +220,11 @@ namespace MonitorDevice
 
         private void BT_ADD_SINGLE_USER_Click(object sender, EventArgs e)
         {
+            if (TB_USERNAME.Text == "")
+            {
+                return;
+            }
+
             DataTable dt = m_DBHandler.ExcuteQuery(string.Format("SELECT * FROM USER WHERE U_NAME ='{0}'", TB_USERNAME.Text));
             if (dt.Rows.Count > 0)
             {
@@ -257,6 +277,10 @@ namespace MonitorDevice
 
         private void BT_ADD_MULTIPLE_USER_Click(object sender, EventArgs e)
         {
+            if (RTB_USERDATALIST.Text == "")
+            {
+                return;
+            }
             List<string> existList = new List<string>();
             List<string> failList = new List<string>();
             List<string> successList = new List<string>();
@@ -300,6 +324,48 @@ namespace MonitorDevice
 
         private void BT_ADD_SINGLE_LOCATION_Click(object sender, EventArgs e)
         {
+            if (TB_ST_NO.Text == "")
+            {
+                MessageBox.Show("ST_NO is empty", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                TB_ST_NO.Focus();
+                return;
+            }
+
+            if (TB_ADDR_C.Text == "")
+            {
+                MessageBox.Show("ADDR_C is empty", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                TB_ADDR_C.Focus();
+                return;
+            }
+
+            if (TB_TRI_NO.Text == "")
+            {
+                MessageBox.Show("TRI_NO is empty", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                TB_TRI_NO.Focus();
+                return;
+            }
+
+            if (TB_TM_X.Text == "")
+            {
+                MessageBox.Show("TM_X is empty", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                TB_TM_X.Focus();
+                return;
+            }
+
+            if (TB_TM_Y.Text == "")
+            {
+                MessageBox.Show("TM_Y is empty", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                TB_TM_Y.Focus();
+                return;
+            }
+
+            if (TB_OBS_SRC.Text == "")
+            {
+                MessageBox.Show("OBS_SRC is empty", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                TB_OBS_SRC.Focus();
+                return;
+            }
+
             DataTable dt = m_DBHandler.ExcuteQuery(string.Format("SELECT ST_NO FROM LOCATION WHERE ST_NO = '{0}'", TB_ST_NO.Text));
             if (dt.Rows.Count > 0)
             {
@@ -335,6 +401,11 @@ namespace MonitorDevice
 
         private void BT_ADD_MULTIPLE_LOCATION_Click(object sender, EventArgs e)
         {
+            if (RTB_LOCATIONDATALIST.Text == "")
+            {
+                return;
+            }
+
             List<string> existList = new List<string>();
             List<string> failList = new List<string>();
             List<string> successList = new List<string>();

@@ -68,6 +68,8 @@
             this.label14 = new System.Windows.Forms.Label();
             this.RTB_LOCATIONDATALIST = new System.Windows.Forms.RichTextBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.TB_ADDR_C = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
             this.BT_ADD_SINGLE_LOCATION = new System.Windows.Forms.Button();
             this.LB_OBS_SRC = new System.Windows.Forms.Label();
             this.TB_OBS_SRC = new System.Windows.Forms.TextBox();
@@ -83,31 +85,29 @@
             this.BT_DELETE_LOCATION = new System.Windows.Forms.Button();
             this.DGV_LOACTION = new System.Windows.Forms.DataGridView();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.CB_DATA_USER = new System.Windows.Forms.ComboBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.CB_DATA_LOCATION = new System.Windows.Forms.ComboBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.DTP_FROM = new System.Windows.Forms.DateTimePicker();
-            this.label17 = new System.Windows.Forms.Label();
-            this.DTP_TO = new System.Windows.Forms.DateTimePicker();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.TB_AVERAE_MS = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.TB_USE_TIME = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.TB_VALID_RECORDS = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.DGV_DATA_RECORDLIST = new System.Windows.Forms.DataGridView();
-            this.BT_QUERY = new System.Windows.Forms.Button();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.TSM_START = new System.Windows.Forms.ToolStripMenuItem();
             this.TSM_STOP = new System.Windows.Forms.ToolStripMenuItem();
             this.TSM_RESET = new System.Windows.Forms.ToolStripMenuItem();
-            this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.TB_VALID_RECORDS = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.TB_USE_TIME = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.TB_AVERAE_MS = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.TB_ADDR_C = new System.Windows.Forms.TextBox();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.BT_QUERY = new System.Windows.Forms.Button();
+            this.DTP_TO = new System.Windows.Forms.DateTimePicker();
+            this.label17 = new System.Windows.Forms.Label();
+            this.DTP_FROM = new System.Windows.Forms.DateTimePicker();
+            this.label16 = new System.Windows.Forms.Label();
+            this.CB_DATA_LOCATION = new System.Windows.Forms.ComboBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.CB_DATA_USER = new System.Windows.Forms.ComboBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PB_SIGNAL)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -123,11 +123,11 @@
             this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_LOACTION)).BeginInit();
             this.tabPage4.SuspendLayout();
-            this.groupBox9.SuspendLayout();
+            this.groupBox11.SuspendLayout();
             this.groupBox10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_DATA_RECORDLIST)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
-            this.groupBox11.SuspendLayout();
+            this.groupBox9.SuspendLayout();
             this.SuspendLayout();
             // 
             // BT_START
@@ -233,10 +233,10 @@
             // 
             this.tabPage1.Controls.Add(this.groupBox2);
             this.tabPage1.Controls.Add(this.groupBox1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 21);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(593, 344);
+            this.tabPage1.Size = new System.Drawing.Size(593, 343);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Main";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -302,10 +302,10 @@
             this.tabPage2.Controls.Add(this.groupBox5);
             this.tabPage2.Controls.Add(this.groupBox4);
             this.tabPage2.Controls.Add(this.groupBox3);
-            this.tabPage2.Location = new System.Drawing.Point(4, 21);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(593, 344);
+            this.tabPage2.Size = new System.Drawing.Size(593, 343);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "User Config";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -441,9 +441,9 @@
             this.tabPage3.Controls.Add(this.groupBox8);
             this.tabPage3.Controls.Add(this.groupBox7);
             this.tabPage3.Controls.Add(this.groupBox6);
-            this.tabPage3.Location = new System.Drawing.Point(4, 21);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(593, 344);
+            this.tabPage3.Size = new System.Drawing.Size(593, 343);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Location Config";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -527,6 +527,23 @@
             this.groupBox7.TabIndex = 1;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Add single location";
+            // 
+            // TB_ADDR_C
+            // 
+            this.TB_ADDR_C.Location = new System.Drawing.Point(67, 41);
+            this.TB_ADDR_C.Name = "TB_ADDR_C";
+            this.TB_ADDR_C.Size = new System.Drawing.Size(214, 22);
+            this.TB_ADDR_C.TabIndex = 12;
+            this.TB_ADDR_C.Text = "雲林縣北港鎮南安里(北港大橋)";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(11, 46);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(51, 12);
+            this.label21.TabIndex = 11;
+            this.label21.Text = "ADDR_C";
             // 
             // BT_ADD_SINGLE_LOCATION
             // 
@@ -659,96 +676,78 @@
             this.tabPage4.Controls.Add(this.groupBox11);
             this.tabPage4.Controls.Add(this.groupBox10);
             this.tabPage4.Controls.Add(this.groupBox9);
-            this.tabPage4.Location = new System.Drawing.Point(4, 21);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(593, 344);
+            this.tabPage4.Size = new System.Drawing.Size(593, 343);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Data Analysis";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // groupBox9
+            // groupBox11
             // 
-            this.groupBox9.Controls.Add(this.BT_QUERY);
-            this.groupBox9.Controls.Add(this.DTP_TO);
-            this.groupBox9.Controls.Add(this.label17);
-            this.groupBox9.Controls.Add(this.DTP_FROM);
-            this.groupBox9.Controls.Add(this.label16);
-            this.groupBox9.Controls.Add(this.CB_DATA_LOCATION);
-            this.groupBox9.Controls.Add(this.label15);
-            this.groupBox9.Controls.Add(this.CB_DATA_USER);
-            this.groupBox9.Controls.Add(this.label12);
-            this.groupBox9.Location = new System.Drawing.Point(9, 4);
-            this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(576, 82);
-            this.groupBox9.TabIndex = 0;
-            this.groupBox9.TabStop = false;
-            this.groupBox9.Text = "Condition";
+            this.groupBox11.Controls.Add(this.TB_AVERAE_MS);
+            this.groupBox11.Controls.Add(this.label20);
+            this.groupBox11.Controls.Add(this.TB_USE_TIME);
+            this.groupBox11.Controls.Add(this.label19);
+            this.groupBox11.Controls.Add(this.TB_VALID_RECORDS);
+            this.groupBox11.Controls.Add(this.label18);
+            this.groupBox11.Location = new System.Drawing.Point(9, 92);
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.Size = new System.Drawing.Size(222, 244);
+            this.groupBox11.TabIndex = 2;
+            this.groupBox11.TabStop = false;
+            this.groupBox11.Text = "Anylysis";
             // 
-            // label12
+            // TB_AVERAE_MS
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(7, 22);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(54, 12);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "Record by";
+            this.TB_AVERAE_MS.Location = new System.Drawing.Point(82, 75);
+            this.TB_AVERAE_MS.Name = "TB_AVERAE_MS";
+            this.TB_AVERAE_MS.Size = new System.Drawing.Size(134, 22);
+            this.TB_AVERAE_MS.TabIndex = 5;
+            this.TB_AVERAE_MS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // CB_DATA_USER
+            // label20
             // 
-            this.CB_DATA_USER.FormattingEnabled = true;
-            this.CB_DATA_USER.Location = new System.Drawing.Point(68, 19);
-            this.CB_DATA_USER.Name = "CB_DATA_USER";
-            this.CB_DATA_USER.Size = new System.Drawing.Size(154, 20);
-            this.CB_DATA_USER.TabIndex = 1;
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(9, 80);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(44, 12);
+            this.label20.TabIndex = 4;
+            this.label20.Text = "Average";
             // 
-            // label15
+            // TB_USE_TIME
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(241, 25);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(46, 12);
-            this.label15.TabIndex = 2;
-            this.label15.Text = "Location";
+            this.TB_USE_TIME.Location = new System.Drawing.Point(82, 47);
+            this.TB_USE_TIME.Name = "TB_USE_TIME";
+            this.TB_USE_TIME.Size = new System.Drawing.Size(134, 22);
+            this.TB_USE_TIME.TabIndex = 3;
+            this.TB_USE_TIME.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // CB_DATA_LOCATION
+            // label19
             // 
-            this.CB_DATA_LOCATION.FormattingEnabled = true;
-            this.CB_DATA_LOCATION.Location = new System.Drawing.Point(302, 22);
-            this.CB_DATA_LOCATION.Name = "CB_DATA_LOCATION";
-            this.CB_DATA_LOCATION.Size = new System.Drawing.Size(268, 20);
-            this.CB_DATA_LOCATION.TabIndex = 3;
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(9, 52);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(49, 12);
+            this.label19.TabIndex = 2;
+            this.label19.Text = "Use Time";
             // 
-            // label16
+            // TB_VALID_RECORDS
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(7, 50);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(30, 12);
-            this.label16.TabIndex = 4;
-            this.label16.Text = "From";
+            this.TB_VALID_RECORDS.Location = new System.Drawing.Point(82, 19);
+            this.TB_VALID_RECORDS.Name = "TB_VALID_RECORDS";
+            this.TB_VALID_RECORDS.Size = new System.Drawing.Size(134, 22);
+            this.TB_VALID_RECORDS.TabIndex = 1;
+            this.TB_VALID_RECORDS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // DTP_FROM
+            // label18
             // 
-            this.DTP_FROM.Location = new System.Drawing.Point(68, 45);
-            this.DTP_FROM.Name = "DTP_FROM";
-            this.DTP_FROM.Size = new System.Drawing.Size(154, 22);
-            this.DTP_FROM.TabIndex = 5;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(241, 55);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(18, 12);
-            this.label17.TabIndex = 6;
-            this.label17.Text = "To";
-            // 
-            // DTP_TO
-            // 
-            this.DTP_TO.Location = new System.Drawing.Point(302, 50);
-            this.DTP_TO.Name = "DTP_TO";
-            this.DTP_TO.Size = new System.Drawing.Size(154, 22);
-            this.DTP_TO.TabIndex = 7;
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(9, 24);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(67, 12);
+            this.label18.TabIndex = 0;
+            this.label18.Text = "Valid records";
             // 
             // groupBox10
             // 
@@ -772,16 +771,6 @@
             this.DGV_DATA_RECORDLIST.RowTemplate.Height = 24;
             this.DGV_DATA_RECORDLIST.Size = new System.Drawing.Size(334, 217);
             this.DGV_DATA_RECORDLIST.TabIndex = 0;
-            // 
-            // BT_QUERY
-            // 
-            this.BT_QUERY.Location = new System.Drawing.Point(514, 50);
-            this.BT_QUERY.Name = "BT_QUERY";
-            this.BT_QUERY.Size = new System.Drawing.Size(56, 24);
-            this.BT_QUERY.TabIndex = 8;
-            this.BT_QUERY.Text = "query";
-            this.BT_QUERY.UseVisualStyleBackColor = true;
-            this.BT_QUERY.Click += new System.EventHandler(this.BT_QUERY_Click);
             // 
             // contextMenuStrip1
             // 
@@ -813,88 +802,99 @@
             this.TSM_RESET.Text = "Reset";
             this.TSM_RESET.Click += new System.EventHandler(this.TSM_RESET_Click);
             // 
-            // groupBox11
+            // groupBox9
             // 
-            this.groupBox11.Controls.Add(this.TB_AVERAE_MS);
-            this.groupBox11.Controls.Add(this.label20);
-            this.groupBox11.Controls.Add(this.TB_USE_TIME);
-            this.groupBox11.Controls.Add(this.label19);
-            this.groupBox11.Controls.Add(this.TB_VALID_RECORDS);
-            this.groupBox11.Controls.Add(this.label18);
-            this.groupBox11.Location = new System.Drawing.Point(9, 92);
-            this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(222, 244);
-            this.groupBox11.TabIndex = 2;
-            this.groupBox11.TabStop = false;
-            this.groupBox11.Text = "Anylysis";
+            this.groupBox9.Controls.Add(this.BT_QUERY);
+            this.groupBox9.Controls.Add(this.DTP_TO);
+            this.groupBox9.Controls.Add(this.label17);
+            this.groupBox9.Controls.Add(this.DTP_FROM);
+            this.groupBox9.Controls.Add(this.label16);
+            this.groupBox9.Controls.Add(this.CB_DATA_LOCATION);
+            this.groupBox9.Controls.Add(this.label15);
+            this.groupBox9.Controls.Add(this.CB_DATA_USER);
+            this.groupBox9.Controls.Add(this.label12);
+            this.groupBox9.Location = new System.Drawing.Point(9, 4);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(576, 82);
+            this.groupBox9.TabIndex = 0;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "Condition";
             // 
-            // label18
+            // BT_QUERY
             // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(9, 24);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(67, 12);
-            this.label18.TabIndex = 0;
-            this.label18.Text = "Valid records";
+            this.BT_QUERY.Location = new System.Drawing.Point(514, 50);
+            this.BT_QUERY.Name = "BT_QUERY";
+            this.BT_QUERY.Size = new System.Drawing.Size(56, 24);
+            this.BT_QUERY.TabIndex = 8;
+            this.BT_QUERY.Text = "query";
+            this.BT_QUERY.UseVisualStyleBackColor = true;
+            this.BT_QUERY.Click += new System.EventHandler(this.BT_QUERY_Click);
             // 
-            // TB_VALID_RECORDS
+            // DTP_TO
             // 
-            this.TB_VALID_RECORDS.Location = new System.Drawing.Point(82, 19);
-            this.TB_VALID_RECORDS.Name = "TB_VALID_RECORDS";
-            this.TB_VALID_RECORDS.Size = new System.Drawing.Size(134, 22);
-            this.TB_VALID_RECORDS.TabIndex = 1;
-            this.TB_VALID_RECORDS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.DTP_TO.Location = new System.Drawing.Point(302, 50);
+            this.DTP_TO.Name = "DTP_TO";
+            this.DTP_TO.Size = new System.Drawing.Size(154, 22);
+            this.DTP_TO.TabIndex = 7;
             // 
-            // label19
+            // label17
             // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(9, 52);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(49, 12);
-            this.label19.TabIndex = 2;
-            this.label19.Text = "Use Time";
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(241, 55);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(18, 12);
+            this.label17.TabIndex = 6;
+            this.label17.Text = "To";
             // 
-            // TB_USE_TIME
+            // DTP_FROM
             // 
-            this.TB_USE_TIME.Location = new System.Drawing.Point(82, 47);
-            this.TB_USE_TIME.Name = "TB_USE_TIME";
-            this.TB_USE_TIME.Size = new System.Drawing.Size(134, 22);
-            this.TB_USE_TIME.TabIndex = 3;
-            this.TB_USE_TIME.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.DTP_FROM.Location = new System.Drawing.Point(68, 45);
+            this.DTP_FROM.Name = "DTP_FROM";
+            this.DTP_FROM.Size = new System.Drawing.Size(154, 22);
+            this.DTP_FROM.TabIndex = 5;
             // 
-            // label20
+            // label16
             // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(9, 80);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(44, 12);
-            this.label20.TabIndex = 4;
-            this.label20.Text = "Average";
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(7, 50);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(30, 12);
+            this.label16.TabIndex = 4;
+            this.label16.Text = "From";
             // 
-            // TB_AVERAE_MS
+            // CB_DATA_LOCATION
             // 
-            this.TB_AVERAE_MS.Location = new System.Drawing.Point(82, 75);
-            this.TB_AVERAE_MS.Name = "TB_AVERAE_MS";
-            this.TB_AVERAE_MS.Size = new System.Drawing.Size(134, 22);
-            this.TB_AVERAE_MS.TabIndex = 5;
-            this.TB_AVERAE_MS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.CB_DATA_LOCATION.FormattingEnabled = true;
+            this.CB_DATA_LOCATION.Location = new System.Drawing.Point(302, 22);
+            this.CB_DATA_LOCATION.Name = "CB_DATA_LOCATION";
+            this.CB_DATA_LOCATION.Size = new System.Drawing.Size(268, 20);
+            this.CB_DATA_LOCATION.TabIndex = 3;
             // 
-            // label21
+            // label15
             // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(11, 46);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(51, 12);
-            this.label21.TabIndex = 11;
-            this.label21.Text = "ADDR_C";
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(241, 25);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(46, 12);
+            this.label15.TabIndex = 2;
+            this.label15.Text = "Location";
             // 
-            // TB_ADDR_C
+            // CB_DATA_USER
             // 
-            this.TB_ADDR_C.Location = new System.Drawing.Point(67, 41);
-            this.TB_ADDR_C.Name = "TB_ADDR_C";
-            this.TB_ADDR_C.Size = new System.Drawing.Size(214, 22);
-            this.TB_ADDR_C.TabIndex = 12;
-            this.TB_ADDR_C.Text = "雲林縣北港鎮南安里(北港大橋)";
+            this.CB_DATA_USER.FormattingEnabled = true;
+            this.CB_DATA_USER.Location = new System.Drawing.Point(68, 19);
+            this.CB_DATA_USER.Name = "CB_DATA_USER";
+            this.CB_DATA_USER.Size = new System.Drawing.Size(154, 20);
+            this.CB_DATA_USER.TabIndex = 1;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(7, 22);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(54, 12);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "Record by";
             // 
             // Form1
             // 
@@ -902,8 +902,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(601, 369);
             this.Controls.Add(this.tabControl1);
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Device Monitor";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PB_SIGNAL)).EndInit();
@@ -925,13 +927,13 @@
             this.groupBox6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DGV_LOACTION)).EndInit();
             this.tabPage4.ResumeLayout(false);
-            this.groupBox9.ResumeLayout(false);
-            this.groupBox9.PerformLayout();
+            this.groupBox11.ResumeLayout(false);
+            this.groupBox11.PerformLayout();
             this.groupBox10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DGV_DATA_RECORDLIST)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
-            this.groupBox11.ResumeLayout(false);
-            this.groupBox11.PerformLayout();
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox9.PerformLayout();
             this.ResumeLayout(false);
 
         }
