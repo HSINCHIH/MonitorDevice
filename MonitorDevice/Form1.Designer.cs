@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.BT_START = new System.Windows.Forms.Button();
             this.BT_STOP = new System.Windows.Forms.Button();
             this.PN_DRAW_WAV = new System.Windows.Forms.Panel();
@@ -233,10 +232,10 @@
             // 
             this.tabPage1.Controls.Add(this.groupBox2);
             this.tabPage1.Controls.Add(this.groupBox1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Location = new System.Drawing.Point(4, 21);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(593, 343);
+            this.tabPage1.Size = new System.Drawing.Size(593, 344);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Main";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -302,10 +301,10 @@
             this.tabPage2.Controls.Add(this.groupBox5);
             this.tabPage2.Controls.Add(this.groupBox4);
             this.tabPage2.Controls.Add(this.groupBox3);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Location = new System.Drawing.Point(4, 21);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(593, 343);
+            this.tabPage2.Size = new System.Drawing.Size(593, 344);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "User Config";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -394,7 +393,7 @@
             this.RTB_USERDATALIST.Name = "RTB_USERDATALIST";
             this.RTB_USERDATALIST.Size = new System.Drawing.Size(278, 156);
             this.RTB_USERDATALIST.TabIndex = 7;
-            this.RTB_USERDATALIST.Text = "Mark\nIan\nRick";
+            this.RTB_USERDATALIST.Text = "";
             // 
             // BT_ADD_MULTIPLE_USER
             // 
@@ -441,9 +440,9 @@
             this.tabPage3.Controls.Add(this.groupBox8);
             this.tabPage3.Controls.Add(this.groupBox7);
             this.tabPage3.Controls.Add(this.groupBox6);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Location = new System.Drawing.Point(4, 21);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(593, 343);
+            this.tabPage3.Size = new System.Drawing.Size(593, 344);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Location Config";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -504,7 +503,7 @@
             this.RTB_LOCATIONDATALIST.Name = "RTB_LOCATIONDATALIST";
             this.RTB_LOCATIONDATALIST.Size = new System.Drawing.Size(270, 161);
             this.RTB_LOCATIONDATALIST.TabIndex = 0;
-            this.RTB_LOCATIONDATALIST.Text = resources.GetString("RTB_LOCATIONDATALIST.Text");
+            this.RTB_LOCATIONDATALIST.Text = "";
             // 
             // groupBox7
             // 
@@ -534,7 +533,6 @@
             this.TB_ADDR_C.Name = "TB_ADDR_C";
             this.TB_ADDR_C.Size = new System.Drawing.Size(214, 22);
             this.TB_ADDR_C.TabIndex = 12;
-            this.TB_ADDR_C.Text = "雲林縣北港鎮南安里(北港大橋)";
             // 
             // label21
             // 
@@ -570,7 +568,6 @@
             this.TB_OBS_SRC.Name = "TB_OBS_SRC";
             this.TB_OBS_SRC.Size = new System.Drawing.Size(100, 22);
             this.TB_OBS_SRC.TabIndex = 8;
-            this.TB_OBS_SRC.Text = "0";
             // 
             // label11
             // 
@@ -615,7 +612,6 @@
             this.TB_TM_X.Size = new System.Drawing.Size(100, 22);
             this.TB_TM_X.TabIndex = 3;
             this.TB_TM_X.Tag = "";
-            this.TB_TM_X.Text = "177833.799";
             // 
             // TB_TM_Y
             // 
@@ -623,7 +619,6 @@
             this.TB_TM_Y.Name = "TB_TM_Y";
             this.TB_TM_Y.Size = new System.Drawing.Size(100, 22);
             this.TB_TM_Y.TabIndex = 2;
-            this.TB_TM_Y.Text = "2606983";
             // 
             // TB_TRI_NO
             // 
@@ -631,7 +626,6 @@
             this.TB_TRI_NO.Name = "TB_TRI_NO";
             this.TB_TRI_NO.Size = new System.Drawing.Size(72, 22);
             this.TB_TRI_NO.TabIndex = 1;
-            this.TB_TRI_NO.Text = "1540";
             // 
             // TB_ST_NO
             // 
@@ -639,7 +633,6 @@
             this.TB_ST_NO.Name = "TB_ST_NO";
             this.TB_ST_NO.Size = new System.Drawing.Size(70, 22);
             this.TB_ST_NO.TabIndex = 0;
-            this.TB_ST_NO.Text = "1540H009";
             // 
             // groupBox6
             // 
@@ -676,9 +669,9 @@
             this.tabPage4.Controls.Add(this.groupBox11);
             this.tabPage4.Controls.Add(this.groupBox10);
             this.tabPage4.Controls.Add(this.groupBox9);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Location = new System.Drawing.Point(4, 21);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(593, 343);
+            this.tabPage4.Size = new System.Drawing.Size(593, 344);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Data Analysis";
             this.tabPage4.UseVisualStyleBackColor = true;
