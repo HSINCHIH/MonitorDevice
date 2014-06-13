@@ -416,7 +416,14 @@ namespace MonitorDevice
                 {
                     continue;
                 }
+
                 string[] args = location.Split(',');
+                if (args.Length < 6)
+                {
+                    failList.Add(location);
+                    continue;
+                }
+
                 DataTable dt = m_DBHandler.ExcuteQuery(string.Format("SELECT * FROM LOCATION WHERE ST_NO ='{0}'", args[0]));
                 if (dt.Rows.Count > 0)
                 {
